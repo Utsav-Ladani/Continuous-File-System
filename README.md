@@ -1,6 +1,6 @@
 # Continuous-File-System
 
-- Continuous File System (CFS) is simple implementation of file system. 
+- Continuous File System (CFS) is a simple implementation of Virtal Persistent Continuous File System. 
 - CFS support 5 primary functionalities:
   - List files
   - Create/Write files
