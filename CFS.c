@@ -90,7 +90,7 @@ void format()
  
 void mount()
 {
-   printf("Do you want to format the disk or use it as it is?(1 or 0): ");
+   printf("Format or not?(1 or 0): ");
    int isformat;
    scanf("%d", &isformat);
  
@@ -139,11 +139,11 @@ void readdir()
    {
  
        printf("\n----------------------------CFS.data--------------------------\n\n");
-       printf("File No.\t File Name\t\t\t\t\t\t\t\t Number of Blocks Occupied\n");
+       printf("File No.\t File Name\n");
        for (int i = 0; i < dir.maxNumFiles; i++)
        {
            if (dir.files[i].isCreated)
-               printf("%d\t\t\t\t %s\t %d\n", i + 1, dir.files[i].fileName, dir.files[i].numBlocks);
+               printf("%d\t\t\t\t %s\n", i + 1, dir.files[i].fileName);
        }
    }
    printf("\n");
@@ -246,4 +246,3 @@ int main()
    unmount();
    return 0;
 }
-
